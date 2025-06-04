@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap');
+
+$light: #ffffff;
+$gray: #2e10b8;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+}
+
+.navbar {
+  background-color: $light;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid $gray;
+}
+
+.sidebar {
+  width: 14rem;
+  height: calc(100vh - 52px);
+  border-right: 1px solid $gray;
+
+  ul {
+    list-style: none;
+    padding: 1rem 2rem;
+
+    li {
+      margin: 1rem;
+
+      a {
+        text-decoration: none;
+        color: #212529;
+        padding: 0.5rem;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        transition: background-color 0.3s ease;
+
+        &.active {
+          font-weight: bold;
+          background-color: #0d6efd;
+          color: #fff;
+        }
+
+        &:hover {
+          background-color: #dee2e6;
+        }
+      }
+    }
+  }
+}
+
+.footer-link {
+  color: #cfd8dc; /* azul claro */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #66b2ff; /* azul brillante */
+  text-decoration: underline;
+}
+
+.footer-icon {
+  color: #cfd8dc;
+  transition: color 0.3s ease;
+}
+
+.footer-icon:hover {
+  color: #66b2ff;
+  cursor: pointer;
+}
+
+.form-control:focus {
+  border-color: #3399ff !important;
+  box-shadow: 0 0 5px #3399ff !important;
+  background-color: #003366 !important;
+  color: #fff !important;
+}
+
+.form-control::placeholder {
+  color: #99bbff;
+}
+
+.btn:hover {
+  background-color: #5599ff !important;
+  color: #001f3f !important;
+  cursor: pointer;
+}
